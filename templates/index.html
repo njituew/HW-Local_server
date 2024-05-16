@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background-color: #333; color: #ddd;">
+    <center><h1 style="color: #ff6f00;">Welcome to My Portfolio</h1></center>
+    <div style="max-width: 600px; margin: 0 auto; background-color: #444; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+        <h2 style="color: #ff6f00;">{{ vk_last_name }} {{ vk_first_name }}</h2>
+        <p>{{ vk_status }}</p>
+        <p><strong style="color: #ff6f00;">Дата рождения:</strong> {{ vk_bdate }}</p>
+        <p><strong style="color: #ff6f00;">Родной город:</strong> {{ vk_home_town }}</p>
+        <p><strong style="color: #ff6f00;">Номер телефона:</strong> {{ vk_phone }}</p>
+        <p><strong style="color: #ff6f00;">Email:</strong> {{ zulip_email }}</p>
+        <p><strong style="color: #ff6f00;">GitHub:</strong> <a href="{{ github_data.html_url }}" style="color: #ff6f00; text-decoration: none;">{{ github_data.html_url }}</a></p>
+        <p><strong style="color: #ff6f00;">Место работы:</strong> {{ github_data.company }}</p>
+        <p><strong style="color: #ff6f00;">Город:</strong> {{ github_data.location }}</p>
+        <p>{{ github_data.bio }}</p>
+    </div>
+</body>
+</html>
